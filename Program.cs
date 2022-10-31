@@ -117,6 +117,41 @@ namespace Hometaskss
             }
             #endregion
 
+            #region newtask1
+            int i, arMean = 0, count = 0, sum = 0;
+            for (i = 2; i < 10; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    sum += i;
+                    count++;
+                    arMean = sum / count;
+                }
+            }
+            Console.WriteLine("Sum is " + sum);
+
+            Console.WriteLine("Arithmetic mean is " + arMean);
+            #endregion
+            #region newtask2
+            int num = 123, remainder = 0, sum = 0;
+            if (num >= 0)
+            {
+
+                while (num > 0)
+                {
+                    remainder = num % 10;
+                    sum += remainder;
+                    num /= 10;
+                }
+                Console.WriteLine("Sum is " + sum);
+            }
+
+            else
+            {
+                Console.WriteLine("PLease enter number greater than 0 ");
+            }
+            #endregion
+
 
         }
     }
